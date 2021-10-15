@@ -1,0 +1,34 @@
+{
+  "images": {
+    "favicon": "resources/images/favicon.ico"
+  },
+  "directories": {
+    "i18n": {
+      "mainPath": "locale",
+      "defaultI18N": "pt-Br",
+      "i18n": "views"
+    }
+  },
+  "db": {
+    "mongodb": {
+      "host": "localhost",
+      "name": "PokemonServe",
+      "erase_db": false,
+      "fixtures": "test/fixtures/production"
+    }
+  },
+  "server": {
+    "https": true,
+    "domain": "localhost",
+    "port": 7000,
+    "httpsPort": 443
+  },
+  "eventConfig": {
+    "wildcard": true,
+    "newListener": true,
+    "maxListeners": 2000
+  },
+  "test": {
+    "minutesLimit": 10
+  }
+}
